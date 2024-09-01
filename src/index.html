@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Difficulty Selector</title>
+    <link rel="stylesheet" href="./styles/colors.css">
+    <link rel="stylesheet" href="./styles/home.css">
+</head>
+
+<body>
+    <header>
+        <h1>
+            Number Game
+        </h1>
+    </header>
+    <div class="difficulty-button-container">
+        <button class="Btn" id="easy-mode">Easy</button>
+        <button class="Btn" id="mid-mode">Mid</button>
+        <button class="Btn" id="hard-mode">Hard</button>
+    </div>
+    
+    <section class="how-to-play">
+        <h2>How to Play!</h2>
+        <p>
+            The goal of the Number Game is to arrange the given numbers in ascending order as quickly as possible. 
+            The difficulty level determines the number of numbers you need to sort:
+        </p>
+        <ul>
+            <li><strong>Easy:</strong> 3 numbers</li>
+            <li><strong>Mid:</strong> 10 numbers</li>
+            <li><strong>Hard:</strong> 20 numbers</li>
+        </ul>
+        <p>Select a difficulty level to begin sorting. Try to complete the task in the shortest time possible!</p>
+    </section>
+
+    <script>
+        document.getElementById('easy-mode').onclick = () => {
+            window.location.href = '/src/game.html?difficulty=easy';
+        };
+        document.getElementById('mid-mode').onclick = () => {
+            window.location.href = '/src/game.html?difficulty=mid';
+        };
+        document.getElementById('hard-mode').onclick = () => {
+            window.location.href = '/src/game.html?difficulty=hard';
+        };
+    </script>
+</body>
+
+</html>
