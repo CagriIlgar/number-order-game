@@ -13,5 +13,5 @@ To Start Playing
 You can play the game here:
 https://cagriilgar.github.io/number-order-game/
 
-Made By
+Made By:
 This game was created by @CagriIlgar & @merv010.
